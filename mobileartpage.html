@@ -10,15 +10,9 @@
         white-space: nowrap;
         padding:10px;
         align-items: center;
+        left:20px;
       }
 
-        .button {
-  display:block;
-  width: 90vh;
-  height: 90vw;
-  fill: white;
-  opacity:0.7;
-}
       
       .img {
         align-items: center;
@@ -40,6 +34,15 @@
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
+         .text2 {
+    position: absolute;
+    left: 5px;
+    top:10px;
+    width: 100%;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
     .img:hover + .text{
@@ -51,15 +54,8 @@
     <link rel="preload" href="assets/gunlady.jpeg" as="image" fetchpriority="high">
     <link rel="preload" href="assets/miquerida.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="assets/step1.jpg" as="image" fetchpriority="high">
-    <script>
-        function hideThisDialog() {
-  document.getElementById('dialog').close();
-}
-    </script>
-    <dialog id="dialog">
-  <p> I am a dialog-box </p>
-  <button onclick="hideThisDialog()">Close Me! </button>
-<dialog>  
+    <div class="text2">scroll<br>for<br> more>>> <br><br><br>click<br>for<br>title<br>&#8595</div>
+     
     <div class="scroll-container">
         <div 
         <img class="img" src="assets/badger.png" ></img>
