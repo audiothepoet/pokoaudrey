@@ -19,6 +19,7 @@
         height:600px;
         position:relative;
         display: inline-block;
+        tabindex: 0;
     
       }
 
@@ -36,6 +37,10 @@
 }
 
     .img:hover + .text{
+        display: block;
+    }
+
+    .img:focus + .text{
         display: block;
     }
 
