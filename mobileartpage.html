@@ -22,7 +22,7 @@
         height:1100px;
         position:relative;
         display: inline-block;
-    
+        tabindex: 0;
       }
 
 
@@ -52,6 +52,12 @@
         display: block;
     }
     .img:hover + .text2{
+        display: none;
+    }
+    .img:focus + .text{
+        display: block;
+    }
+    .img:focus + .text2{
         display: none;
     }
 
