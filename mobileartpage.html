@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
     <style>
@@ -17,7 +19,7 @@
       .img {
         align-items: center;
         padding-left:40px;
-        height:1200px;
+        height:1100px;
         position:relative;
         display: inline-block;
     
@@ -28,27 +30,28 @@
     display: none;
     position: absolute;
     left: 30px;
-    text-align: bottom;
+    bottom:40px;
     width: 100%;
     text-align: left;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
-         .text2 {
-    position: absolute;
-    width: 100%;
-    text-align: left;
-    text-align: bottom;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+        .text2 {
     display: block;
+    position: absolute;
+    left: 30px;
+    bottom:40px;
+    width: 100%;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-
-    .img:hover .text{
+    
+    .img:hover + .text{
         display: block;
     }
-    .img:hover .text2{
+    .img:hover + .text2{
         display: none;
     }
 
@@ -57,64 +60,65 @@
     <link rel="preload" href="assets/gunlady.jpeg" as="image" fetchpriority="high">
     <link rel="preload" href="assets/miquerida.jpg" as="image" fetchpriority="high">
     <link rel="preload" href="assets/step1.jpg" as="image" fetchpriority="high">
-    <div class="text2">scroll<br>for<br> more>>> <br><br><br><br><br><br>click<br>for<br>title<br>&#8595</div>
+    
      
-   <div class="scroll-container">
+    <div class="scroll-container">
+        <div class="text2">click for title &#8593 <br>scroll for more>>></div>
+        <img class="img" src="assets/badger.png" ></img>
+        
+        <span class="text"> <b><i>"Badger" </i></b><br> prismacolor markers, micron pens, colored pencils, oil pastels </span>
 
-    <img class="img" src="assets/badger.png"></img>
-    <img class="img" src="assets/gunlady.jpeg"></img>
-    <img class="img" src="assets/miquerida.jpg"></img>
-    <img class="img" src="assets/step1.jpg"></img>
-    <img class="img" src="assets/thea.JPG"></img>
-    <img class="img" src="assets/audio.JPG"></img>
-    <img class="img" src="assets/smidgethepidge.JPG"></img>
-    <img class="img" src="assets/trouble.JPG"></img>
-    <img class="img" src="assets/weathered.JPEG"></img>
-    <img class="img" src="assets/plants.jpg"></img>
-    <img class="img" src="assets/treeoflife.JPG"></img>
-    <img class="img" src="assets/radicalfool.JPG"></img>
-    <img class="img" src="assets/withoutyou.JPEG"></img>
-    <img class="img" src="assets/dustbowl.jpg"></img>
-    <img class="img" src="assets/stillinthere.JPG"></img>
-    <img class="img" src="assets/lifeform.JPG"></img>
-    <img class="img" src="assets/armadillo.JPG"></img>
-    <img class="img" src="assets/dementia.JPG"></img>
-    <img class="img" src="assets/cochlea.JPG"></img>
-    <img class="img" src="assets/brainstem.JPG"></img>
-    <img class="img" src="assets/getyercrumbs.JPG"></img>
-    <img class="img" src="assets/lotusflower.JPG"></img>
-    <img class="img" src="assets/hatethelight.JPG"></img>
-    <img class="img" src="assets/vibration.JPG"></img>
-    <img class="img" src="assets/suicide.JPG"></img>
-    <img class="img" src="assets/doctordope.JPG"></img>
+        <img class="img"    src="assets/gunlady.jpeg" ></img>
+        <span class="text"> <b><i>"dead dirty doggy" </i></b><br> digital collage </span>
+    
+        <img class="img"      src="assets/miquerida.jpg" ></img>
+        <span class="text"> <b><i>"My dear girl" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/step1.jpg" ></img>
+        <span class="text"> <b><i>"Step 1" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/thea.JPG" ></img>
+        <span class="text"> <b><i>"Princess Thea" </i></b><br> prismacolor markers,<br> micron pens, <br> colored pencils </span>
+        <img class="img"      src="assets/audio.JPG" ></img>
+        <span class="text"> <b><i>"Oblivious Variant" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/smidgethepidge.JPG" ></img>
+        <span class="text"> <b><i>"Smidge the Pidge" </i></b><br> prismacolor markers,<br> micron pens, <br> colored pencils </span>
+        <img class="img"      src="assets/trouble.JPG" ></img>
+        <span class="text"> <b><i>"having trouble being present in the conversation..." </i></b><br> watercolor,<br>  micron pen </span>
+        <img class="img"      src="assets/weathered.JPEG" ></img>
+        <span class="text"> <b><i>"Weathered Variant" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/plants.jpg" ></img>
+        <span class="text"> <b><i>"The Secret Life of Plants" </i></b><br> prismacolor markers,<br>  micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/treeoflife.JPG" ></img>
+        <span class="text"> <b><i>"Tree of Life" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/radicalfool.JPG" ></img>
+        <span class="text"> <b><i>"Radical Fool" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/withoutyou.JPEG" ></img>
+        <span class="text"> <b><i>"Without You" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/dustbowl.jpg" ></img>
+        <span class="text"> <b><i>"Dustbowl" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/stillinthere.JPG" ></img>
+        <span class="text"> <b><i>"they say she's still in there somewhere..." </i></b><br> digital collage </span>
+        <img class="img"      src="assets/lifeform.JPG" ></img>
+        <span class="text"> <b><i>"strange variant..." </i></b><br> digital collage </span>
+        <img class="img"      src="assets/armadillo.JPG" ></img>
+        <span class="text"> <b><i>"Armadillo" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/dementia.JPG" ></img>
+        <span class="text"> <b><i>"dementia" </i></b><br> digital collage </span>
+        <img class="img"      src="assets/cochlea.JPG" ></img>
+        <span class="text"> <b><i>"cochlea" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/brainstem.JPG" ></img>
+        <span class="text"> <b><i>"brain stem" </i></b><br> prismacolor markers,<br> micron pens</span>
+        <img class="img"      src="assets/getyercrumbs.JPG" ></img>
+        <span class="text"> <b><i>"Tin Foil Rat" </i></b><br> watercolor,<br> micron pen </span>
+        <img class="img"      src="assets/lotusflower.JPG" ></img>
+        <span class="text"> <b><i>"Thousand Petal Lotus Flower" </i></b><br> digital collage</span>
+        <img class="img"      src="assets/hatethelight.JPG" ></img>
+        <span class="text"><br> micron pens, colored pencils </span>
+        <img class="img"      src="assets/vibration.JPG" ></img>
+        <span class="text"><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/suicide.JPG" ></img>
+        <span class="text"> <b><i>"suicide" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
+        <img class="img"      src="assets/doctordope.JPG" ></img>
+        <span class="text"> <b><i>"Dr. Dope" </i></b><br> acrylic, watercolor,<br> prismacolor markers, micron pens,<br> colored pencils </span>
 
-</div>
-
-<span class="text"> <b><i>"Badger" </i></b><br> prismacolor markers, micron pens, colored pencils, oil pastels </span>
-<span class="text"> <b><i>"dead dirty doggy" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"My dear girl" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"Step 1" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"Princess Thea" </i></b><br> prismacolor markers,<br> micron pens, <br> colored pencils </span>
-<span class="text"> <b><i>"Oblivious Variant" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"Smidge the Pidge" </i></b><br> prismacolor markers,<br> micron pens, <br> colored pencils </span>
-<span class="text"> <b><i>"having trouble being present in the conversation..." </i></b><br> watercolor,<br>  micron pen </span>
-<span class="text"> <b><i>"Weathered Variant" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"The Secret Life of Plants" </i></b><br> prismacolor markers,<br>  micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"Tree of Life" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"Radical Fool" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"Without You" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"Dustbowl" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"they say she's still in there somewhere..." </i></b><br> digital collage </span>
-<span class="text"> <b><i>"strange variant..." </i></b><br> digital collage </span>
-<span class="text"> <b><i>"Armadillo" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"dementia" </i></b><br> digital collage </span>
-<span class="text"> <b><i>"cochlea" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"brain stem" </i></b><br> prismacolor markers,<br> micron pens</span>
-<span class="text"> <b><i>"Tin Foil Rat" </i></b><br> watercolor,<br> micron pen </span>
-<span class="text"> <b><i>"Thousand Petal Lotus Flower" </i></b><br> digital collage</span>
-<span class="text"> <b><i>"micron pens, colored pencils" </i></b></span>
-<span class="text"> <b><i>"prismacolor markers, micron pens, colored pencils" </i></b></span>
-<span class="text"> <b><i>"suicide" </i></b><br> prismacolor markers,<br> micron pens,<br> colored pencils </span>
-<span class="text"> <b><i>"Dr. Dope" </i></b><br> acrylic, watercolor,<br> prismacolor markers, micron pens,<br> colored pencils </span>
-
+      </div>
 </html>
