@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
     <style>
@@ -19,10 +17,7 @@
         height:600px;
         position:relative;
         display: inline-block;
-        tabindex: 0;
-    
       }
-
 
       .text {
     display: none;
@@ -36,20 +31,46 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-    .img:hover + .text{
-        display: block;
-    }
-
-    .img:focus + .text{
-        display: block;
-    }
-
+  .text2 {
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+        .img:hover + .text,
+        .img:focus + .text {
+            display: block;
+        }
     </style>
     <link rel="preload" href="assets/bagdger.png" as="image" fetchpriority="high">
-    <link rel="preload" href="assets/gunlady.jpeg" as="image" fetchpriority="high">
-    <link rel="preload" href="assets/miquerida.jpg" as="image" fetchpriority="high">
-    <link rel="preload" href="assets/step1.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/gunlady.jpeg" as="image" fetchpriority="medium">
+    <link rel="preload" href="assets/miquerida.jpg" as="image" fetchpriority="medium">
+    <link rel="preload" href="assets/step1.jpg" as="image" fetchpriority="medium">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Add event listeners to all images
+          var images = document.querySelectorAll('.img');
+          
+          images.forEach(function(image) {
+              var text2 = document.querySelector('.text2');
+              var hasHovered = false;
+
+              image.addEventListener('mouseenter', function() {
+                  // Hide text2 only on the first hover
+                  if (!hasHovered) {
+                      text2.style.display = 'none';
+                      hasHovered = true;
+                  }
+              });
+          });
+      });
+  </script>
     <div class="scroll-container">
+      <span class="text2">hover for info &#8593<br>scroll for more>>></span>
         <img class="img" src="assets/badger.png" ></img>
         
         <span class="text"> <b><i>"Badger" </i></b><br> prismacolor markers, micron pens, colored pencils, oil pastels </span>
